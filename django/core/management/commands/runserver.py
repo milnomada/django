@@ -104,7 +104,8 @@ class Command(BaseCommand):
         self.stdout.write("Performing system checks...\n\n")
         self.validate(display_num_errors=True)
         try:
-            self.check_migrations()
+            #self.check_migrations()
+            pass
         except ImproperlyConfigured:
             pass
         now = datetime.now().strftime('%B %d, %Y - %X')
